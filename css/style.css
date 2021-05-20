@@ -1,0 +1,454 @@
+@font-face {
+    font-family: "MullerRegular";
+    font-style: normal;
+    src: url(../fonts/MullerRegular.woff2),
+         url(../fonts/MullerRegular.woff);
+}
+@font-face {
+    font-family: "MullerMedium";
+    src: url(../fonts/MullerMedium.woff2),
+         url(fonts/MullerMedium.woff);
+}
+@font-face {
+    font-family: "MullerBold"; 
+    font-weight: 700;       
+    src: url(../fonts/MullerBold.woff2),
+         url(../fonts/MullerBold.woff);
+         
+}
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 16px;
+    
+}
+body {
+    background-color: #f1f1f1;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 2px 3px rgb(156, 102, 3);
+    transition: box-shadow 500ms cubic-bezier();
+}
+
+h2 {
+    
+    font-size: 40px;
+    color: #333333;
+    font-weight: 500;
+    
+}
+p {
+    line-height: 2;
+}
+.header-part {
+    
+    margin-top: 38px;
+} 
+ .header-logo {
+    max-width: 258px;
+    margin-right: 18px;
+} 
+.header-phone {
+    /* align-self:center; */
+    font-size: 22px;
+    font-weight: 700;
+    color: #666666;
+} 
+
+.header-account {
+    margin-left: auto;
+
+}
+.header-account-href{
+    float: right;
+
+    font-size: 16px;
+    color: #cc9933;
+}
+.fa-arrow-circle-right:before {
+    content: "\f0a9";
+    font-family: FontAwesome;
+    color: #cc9933;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    padding: 20px 22px 20px 24px;
+    background-color: white;
+    border-radius: 15px;
+}
+.header-nav-list {
+    display: flex;
+    align-items: center;
+}
+.header-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+.header-nav-item a {
+    color: #414141;
+    font-weight: 600;
+}
+.header-search-form {
+    position: relative;
+    margin-left: 100px;
+}
+.header-search {
+    padding-left: 20px;
+    width: 350px;
+    height: 45px;
+    border: none;
+    background-color:  #f1f1f1;
+    border-radius: 15px;  
+     
+}
+.header-search-button {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat; 
+    border: none;
+    cursor: pointer;
+}
+
+.booking-part-form {
+    display: flex;
+    flex-direction: column;
+}
+.booking-part-form-input {
+    margin-bottom: 25px;
+    padding-left: 22px;
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+}
+.booking-part-form-block {
+    display: flex;
+}
+.booking-part-form-button {
+    margin-right: 30px;
+    width: 32%;
+    height: 70px;
+    color: white;
+    background-color: #cc9933;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.booking-part-form-block-numberr{
+    align-self: center;
+}
+.booking-part-form-block-number {
+    color: #cc9933;
+}
+
+.booking-offer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 200px 20px 45px;
+    height: 540px;
+    background-image: url(../img/22@2x.jpg);
+    background-size: cover;
+    border-radius: 15px;
+
+}
+h1 {
+    margin: 0;
+    margin-top: 200px;
+    font-size: 66px;
+    font-weight: bolder;
+    line-height: 1;
+    color: white;
+}
+
+.booking-offer-main-price {
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 40px;
+    font-size: 35px;
+    color: white;
+    opacity: 0.5;
+}
+.booking-offer-main-button {
+    align-self: center;
+    color:  #cc9933;
+    border: none;
+    background-color: transparent;
+}
+.booking-offer-main-button:hover {
+    box-shadow: none;
+}
+.fa-angle-right {
+    content: icon;
+    margin-left: 3px;
+    color:  #cc9933;
+    align-self: center;
+}
+.describe {
+    padding: 0 240px 0 40px;
+    
+}
+.describe p {
+    opacity: 0.7;
+}
+.services-name {
+    margin-left: 40px;
+}
+
+.services-list-item {
+   
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.services-list-item-last {
+    padding: 0 120px 45px 45px;
+}
+.services-list-item-last a {
+    color: #cc9933; 
+}
+.services-list h3 {
+   color: #cc9933;
+}
+.excellence-name {
+    margin-left: 40px;
+}
+
+.excellence-list-item {
+   
+    margin-bottom: 30px;
+    padding: 35px;
+    line-height: 32px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+.placement-name {
+    margin-left: 40px;
+}
+
+.placement-list-item {
+  
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.placement-list-item-price {
+    font-family: "MullerBold";
+     font-size: xx-large;
+    font-weight: 900;
+}
+.placement-list-item-stars {
+    margin-right: 30px;
+}
+.placement-list-item-place {
+    opacity: 0.5;
+}
+.placement-list-item-button {
+    padding: 17px 25px;
+    font-weight: 600;
+    border: #cc9933 1px solid;
+    border-radius: 15px;
+    color: #cc9933;
+    background-color: transparent;
+}
+.placement-list-item-describe {
+    padding: 40px 0 40px 50px;
+}
+.placement-list-item-last { 
+    height: 500px;
+    display: flex;
+    padding: 0 0 60px 40px;
+    background-image: url(../img/41@2x.jpg);
+    background-size: cover; 
+   font-size: 22px;
+    position: relative;
+}
+.placement-list-item-last-a:hover {
+    box-shadow: none;
+    color: orange;
+  }
+.placement-list-item-last-a {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+}
+.placement-list-item-last-a::after{
+    content: ">";
+    position: absolute;
+    margin-left: 5px;
+}
+.placement-list-item-last-a:hover::after{
+
+    transform: translateX(20px) scale(1.5);
+}
+.contacts {
+    
+    line-height: 1.5;
+    margin-bottom: 23px;
+}
+/* .contacts-info {
+    margin-right: 178px;
+} */
+.contacts-info a {
+    color:  #cc9933;
+}
+.contacts-info-h2 {
+    text-align: center;
+}
+.contacts-info-main {
+    padding: 30px 43px 68px 48px;
+    width: 474px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.contacts-info-left{
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid grey;
+}
+.contacts-info-left-main {
+    margin-top: 0;
+    margin-right: 45px;
+    font-family: "MullerBold";
+    font-size: 22px;
+    color: #666;
+}
+.contacts-info-left-info {
+    margin-top: 0px;
+}
+.contacts-info-left-main-first {
+    margin-right: 90px;
+}
+.contacts-info-left-main-second {
+    margin-right: 85px;
+}
+
+.contacts-info-left span {
+    font-size: 16px;
+    opacity: 0.7;
+}
+.contacts-right{
+    margin-top: 50px;
+}
+.contacts-info-button {
+    margin-top: 15px;
+    padding: 17px 25px;
+    font-weight: 600;
+    border: #cc9933 1px solid;
+    border-radius: 15px;
+    color: #cc9933;
+    background-color: transparent;
+}
+.contacts-right-form {
+    display: flex;
+    flex-direction: column;
+}
+.contacts-right-input {
+    width: 341px;
+    margin-bottom: 25px;
+    padding-left: 22px;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+}
+.contacts-right-texterea {
+    height: 122px;
+    padding-top: 20px;
+}
+.contacts-right-button {
+
+    height: 70px;
+    color: white;
+    background-color: #cc9933;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* .contacts-right{
+    align-self: center;
+} */
+.contacts-info-h2{
+    text-align: left;
+}
+.footer {
+    display: flex;
+    margin-top:30px;
+    margin-bottom: 55px;
+    padding: 48px 50px 58px  69px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 15px;
+    line-height: 1.5;
+}
+.footer a {
+   color: #cc9933;
+}
+.footer p {
+    color: #fff;
+    font-size: 16px;
+}
+.footer-part {
+    margin-right: 134px;
+}
+.footer-part:last-child {
+    margin-right: 0;
+}
+.footer-part-first {
+    width: 350px;
+}
+.footer-part-first p {
+    margin-bottom: 50px;
+}
+.footer-part-middle {
+    position: relative;
+    margin-right: 257px;
+}
+.footer-part-middle p {
+    margin-bottom: 45px;
+}
+.footer-part-middle-phone {
+    margin-bottom: 40px;
+}
+.footer-part-middle img {
+    position: absolute;
+    top: 132px;
+    right: -130px;
+    width: 255px;
+}
+.footer-part-social {
+    display: flex;
+    flex-direction: column;
+}
+.footer-part-social img {
+    margin-bottom: 20px;
+}
